@@ -36,6 +36,6 @@ deploy:
   space: development
   username: kirankumar.x.tadepalli@verizon.com
   password: kirank1#
-  on:
-    repo: travis-ci/v104510/Test
-    php: 5.4
+ # on:
+ #   repo: travis-ci/v104510/Test
+ #   php: 5.4
