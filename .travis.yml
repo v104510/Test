@@ -27,13 +27,15 @@ env:
 # use the $DB env variable to determine the phpunit.xml to use
 #script: phpunit --configuration phpunit_mysql.xml --coverage-text
 script: TRUE 
+
 # Configure deploy section only
- deploy:
-#   edge: true
+deploy:
   provider: cloudfoundry
-   username: kirankumar.x.tadepalli@verizon.com
-   password: kirank1#
-   api: https://api.run.pivotal.io
-   organization: simple biller
-#   space: staging
-   space: development
+  api: https://api.run.pivotal.io
+  organization: simple biller
+  space: development
+  username: kirankumar.x.tadepalli@verizon.com
+  password: kirank1#
+  on:
+    repo: travis-ci/v104510/Test
+    php: 5.4
