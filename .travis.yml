@@ -29,12 +29,12 @@ env:
 #script: phpunit --configuration phpunit_mysql.xml --coverage-text
 script: TRUE 
 # Configure deploy section only
- deploy:
-   edge: true
-   provider: cloudfoundry
-   username: kirankumar.x.tadepalli@verizon.com
-   password: kirank1#
-   api: https://api.run.pivotal.io
-   organization: simple biller
-   space: staging
+ #deploy:
+#   edge: true
+ #  provider: cloudfoundry
+#   username: kirankumar.x.tadepalli@verizon.com
+#   password: kirank1#
+#   api: https://api.run.pivotal.io
+ #  organization: simple biller
+#   space: staging
    #space: development
